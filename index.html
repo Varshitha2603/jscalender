@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inpt">
+            <!-- <h1>Calculater</h1> -->
+            <input type="text" id="intp" placeholder="Enter a number">
+        </div>
+        <div class="but">
+            <div>
+                <button class="clear" onclick="cl()">C</button>
+                <button class="delete" onclick="del()">DEL</button>
+                <button id="modulo" onclick="numb('%')">%</button>
+                <button id="divide" onclick="numb('/')">/</button>
+            </div>
+            <div>
+                <button onclick="numb(7)">7</button>
+                <button onclick="numb(8)">8</button>
+                <button onclick="numb(9)">9</button>
+                <button class="multiple" onclick="numb('*')">*</button>
+            </div>
+            <div>
+                <button onclick="numb(4)">4</button>
+                <button onclick="numb(5)">5</button>
+                <button onclick="numb(6)">6</button>
+                <button class="sub" onclick="numb('-')">-</button>
+            </div>
+            <div>
+                <button onclick="numb(1)">1</button>
+                <button onclick="numb(2)">2</button>
+                <button onclick="numb(3)">3</button>
+                <button class="add" onclick="numb('+')">+</button>
+            </div>
+            <div>
+                <button class="dot" onclick="numb('.')">.</button>
+                <button onclick="numb(0)">0</button>
+                <button class="equa" onclick="equ()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
